@@ -7,7 +7,9 @@ int load_file(LOGIN* list[], char* filename){
     //If there is no data file, 
     //display an error message and ask to create a new file
     if(datafile == NULL){
+#ifdef DEBUG_MODE
 	printf("Error, %s file not exist! make anyway? (Yes 1, No 2)\n", filename);
+#endif
 	scanf("%d", &num);
 
 	if(num == 1){

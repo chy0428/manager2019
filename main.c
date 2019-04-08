@@ -6,7 +6,11 @@ int main(int argc, char* argv[]){
     int is_login = 0;
     int menu_id = 0;
     char menu[] = "";
+    
+#ifdef DEBUG_MODE
+    printf("DEBUG>> datafile opened! \n\n");
 
+#endif
     if(argc != 2){
 	printf("Usage : manager <datafile>\n");
 	return 0;

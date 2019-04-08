@@ -8,7 +8,9 @@ void ask_menu(int is_login){
 	    printf("# ");
 	    scanf(" %s", menu);
 	    if(strcmp(menu, "logout") == 0){
+#ifdef DEBUG_MODE
 		printf("Bye!!");
+#endif
 		break;
 	    }
 	    else printf("%s\n", menu);
