@@ -2,4 +2,4 @@
   #include <stdio.h>
   #define STDIOH
 #endif
-int ask_menu(int is_login);
+void  ask_menu(int is_login);
